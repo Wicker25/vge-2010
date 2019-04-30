@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<entity name="Wicker25" type="text" coords="300,50,999" fixed="true" visible="false" sensible="true">
+
+	<text font="@font0" string="{FF0000}bla {00FF00}bla {0000FF}bla" row_spacing="17.0" page="0" markup="true" wordwrap="false" />
+
+	<frame color="9090FF70" border_color="8080FFE0" border_width="2" filled="true" />
+
+</entity>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<entity name="character0" type="character" coords="120,240" center="25,87" fixed="false" visible="true">
+
+	<aspect image="data/charset/ragnarock.png" clip="50,101" />
+	<aspect_manipulation color="FFFFFFFF" rotation="0" scale="1,1" size="50,101" blending="true" />
+	<aspect_animation status="stop" speed="180" range="1,9" />
+
+	<object_features direction="down" speed="1.0" face="@face0" shadow="@shadow0" message="{FFFFFF}Non si può stare insieme per sempre. Un mondo con amici che si fidano di te e sui quali puoi contare... {FFFF77}Sarebbe meraviglioso{FFFFFF}, ma ho troppa {00AA00}paura{FFFFFF} ad abituarmici... Un giorno ti porteranno via tutti gli amici di questo bel mondo e {BB0000}rimarrai solo{FFFFFF}... È duro da accettare... È troppo {EEEEEE}triste{FFFFFF}... Quando questo momento arriva è {FF0000}difficile{FFFFFF} trovare la {FFFF00}forza{FFFFFF} di ricominciare da soli. Preferisco essere solo subito... Meglio non avere amici..." />
+
+	<varea>
+
+		<vertex coords="-20,10" />
+		<vertex coords="20,10" />
+		<vertex coords="12,-40" />
+		<vertex coords="10,-65" />
+		<vertex coords="8,-80" />
+		<vertex coords="-12,-80" />
+		<vertex coords="-15,-65" />
+		<vertex coords="-15,-40" />
+
+	</varea>
+
+	<carea>
+
+		<vertex coords="-25,-4" />
+		<vertex coords="-25,4" />
+		<vertex coords="-15,10" />
+		<vertex coords="15,10" />
+		<vertex coords="25,4" />
+		<vertex coords="25,-4" />
+		<vertex coords="15,-10" />
+		<vertex coords="-15,-10" />
+
+	</carea>
+
+	<event_list loop="true">
+
+		<event type="transient_color" value0="5050FFFF" value1="25" />
+		<event type="transient_color" value0="50FF50FF" value1="25" />
+		<event type="transient_color" value0="FF5050FF" value1="25" />
+
+		<event type="move_right" value0="120" />
+		<event type="wait_seconds" value0="1.5" />
+		<event type="move_left" value0="120" />
+		<event type="wait_seconds" value0="1.5" />
+
+	</event_list>
+
+</entity>
+
+
+

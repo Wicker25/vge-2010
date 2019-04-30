@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<entity name="flame0" type="particle_system" coords="380,250,250" fixed="false" visible="true" >
+
+	<particles entity="@fire_particle" model="flame" number="35" frequency="30.0" speed="3.5" life="400.0" active="true" />
+	<stream width="40" direction="90.0" />
+	<explosion range="0.0,75.0" />
+	<gravity direction="270.0" acceleration="0.0" />
+	<color_transition start="RGBA(255,170,5,255)" end="RGBA(40,10,0,30)" symmetry="0.55" />
+	<scale_transition start="2.0" end="1.0" symmetry="0.5" />
+
+	<varea>
+
+		<vertex coords="-40,-120" />
+		<vertex coords="-40,30" />
+		<vertex coords="40,30" />
+		<vertex coords="40,-120" />
+
+	</varea>
+
+	<event_list loop="true">
+
+		<event type="wait_seconds" value0="1.0" />
+		<event type="set_color_transition" value0="RGBA(0,170,255,255)" value1="RGBA(0,10,40,30)" value2="0.55" />
+
+		<event type="wait_seconds" value0="1.0" />
+		<event type="set_color_transition" value0="RGBA(255,0,20,255)" value1="RGBA(0,0,0,30)" value2="0.55" />
+
+		<event type="wait_seconds" value0="1.0" />
+		<event type="set_color_transition" value0="RGBA(170,255,0,255)" value1="RGBA(10,40,0,30)" value2="0.55" />
+
+		<event type="wait_seconds" value0="1.0" />
+		<event type="set_color_transition" value0="RGBA(255,170,5,255)" value1="RGBA(40,10,0,30)" value2="0.55" />
+
+	</event_list>
+
+</entity>

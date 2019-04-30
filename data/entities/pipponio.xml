@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<entity name="character0" type="character" coords="120.00,240.00" center="25.00,87.00" visible="true" fixed="false" sensible="true" >
+
+	<aspect image="data/charset/ragnarock.png" clip="50,101" />
+	<aspect_manipulation color="FFFFFFFF" rotation="0.00" scale="1.00,1.00" blending="true" />
+	<aspect_animation status="stop" speed="180.00" range="1,9" />
+
+	<object_features direction="down" speed="1.00" face="@face0" shadow="@shadow0" message="{FFFFFF}Non si può stare insieme per sempre. Un mondo con amici che si fidano di te e sui quali puoi contare... {FFFF77}Sarebbe meraviglioso{FFFFFF}, ma ho troppa {00AA00}paura{FFFFFF} ad abituarmici... Un giorno ti porteranno via tutti gli amici di questo bel mondo e {BB0000}rimarrai solo{FFFFFF}... È duro da accettare... È troppo {EEEEEE}triste{FFFFFF}... Quando questo momento arriva è {FF0000}difficile{FFFFFF} trovare la {FFFF00}forza{FFFFFF} di ricominciare da soli. Preferisco essere solo subito... {FF0000}Meglio non avere amici..." />
+
+	<varea>
+
+		<vertex coords="-20.00,10.00" />
+		<vertex coords="20.00,10.00" />
+		<vertex coords="12.00,-40.00" />
+		<vertex coords="10.00,-65.00" />
+		<vertex coords="8.00,-80.00" />
+		<vertex coords="-12.00,-80.00" />
+		<vertex coords="-15.00,-65.00" />
+		<vertex coords="-15.00,-40.00" />
+
+	</varea>
+
+	<carea>
+
+		<vertex coords="-25.00,-4.00" />
+		<vertex coords="-25.00,4.00" />
+		<vertex coords="-15.00,10.00" />
+		<vertex coords="15.00,10.00" />
+		<vertex coords="25.00,4.00" />
+		<vertex coords="25.00,-4.00" />
+		<vertex coords="15.00,-10.00" />
+		<vertex coords="-15.00,-10.00" />
+
+	</carea>
+
+	<event_list loop="true">
+
+		<event type="transient_color" value0="5050FFFF" value1="25.00" />
+		<event type="transient_color" value0="50FF50FF" value1="25.00" />
+		<event type="transient_color" value0="FF5050FF" value1="25.00" />
+		<event type="move_right" value0="120.00" />
+		<event type="wait_seconds" value0="1.50" />
+		<event type="move_left" value0="120.00" />
+		<event type="wait_seconds" value0="1.50" />
+
+	</event_list>
+
+</entity>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<entity name="fountain0" type="particle_system" coords="300,420,450" fixed="false" visible="true" >
+
+	<particles entity="@particle0" model="stream" number="10" frequency="20.0" speed="10" life="1000.0" />
+	<stream width="20" direction="45.0" />
+	<gravity direction="270.0" acceleration="0.5" />
+	<color_transition start="RGB( 180, 180, 255, 255 )" end="RGB( 255, 255, 255, 180 )" symmetry="0.5" />
+
+	<varea>
+
+		<vertex coords="-250,-120" />
+		<vertex coords="-250,30" />
+		<vertex coords="250,30" />
+		<vertex coords="250,-120" />
+
+	</varea>
+
+	<event_list loop="true">
+
+		<event type="transient_stream_direction" value0="150.0" value1="1.0" />
+		<event type="transient_stream_direction" value0="30.0" value1="-1.0" />
+
+	</event_list>
+
+</entity>
