@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<scene title="La casa di Tom" width="2000" height="2000">
+    <tileset src="data/images/tileset4.png" width="64" height="64">
+        <layer depth="bottom">
+            <tile left="6" top="1" coord="0,0,1000,1000"/>
+        </layer>
+        <layer depth="top">
+        </layer>
+    </tileset>
+</scene>
